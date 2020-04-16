@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    </head>
+    <body id="body">
+
+        <header>Task Manager</header>
+        <br>
+        <h1>Add Task</h1>
+        <form>
+            <div id="firstContainer">
+                <input type="text" name="title" id="title" placeholder="Title" required><br><br>
+                <input type="text" name="description" id="description" placeholder="Description"><br><br>
+                <input type="date" name="date" id="dueDate" placeholder="YYYY-MM-DD" required><br><br>
+            </div>
+
+            <div id="secondContainer">
+    
+                <div class="secondInnerContainer">
+                    <label>Priority :: </label>
+                    <input type="radio" id="high" name="priority" value="100" class="priority">                    <label for="high" >High</label><br>
+                    <input type="radio" id="medium" name="priority" value="50" class="priority" checked>
+                    <label for="medium" >Medium</label><br>
+                    <input type="radio" id="low" name="priority" value="0" class="priority">
+                    <label for="low" >Low</label><br>
+                </div>
+            </div>
+            
+            <button type="submit" id="submit">Submit</button>
+
+        </form>
+
+            <div id="thirdContainer">
+                <label>Sort By :: </label>
+                <button id="set">Priority</button>
+                <button id="setdate">Date Desc</button>
+                <button id="setdateasc">Date Asc</button>
+                <button id="setstatus">Recent Status</button>
+            </div>
+            <br>
+            <ul id="list">
+        
+            </ul>
+       
+        <script src='script.js'></script>
+    </body>
+</html>
